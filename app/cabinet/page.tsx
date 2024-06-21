@@ -10,7 +10,7 @@ export default function page() {
         Cabinet CAP Patrimoine
       </div>
       <div className="banner-page-descr">
-        Fort de 18 années d’expériences dans le domaine bancaire (notamment en banque privée) et dans les assurances, notre équipe reste en veille sur les nouveautés fiscales, économiques et juridiques pour toujours mieux vous accompagner.
+        Fort de 18 années d'expériences dans le domaine bancaire (notamment en banque privée) et dans les assurances, notre équipe reste en veille sur les nouveautés fiscales, économiques et juridiques pour toujours mieux vous accompagner.
       </div>
     </div>
 
@@ -29,7 +29,7 @@ export default function page() {
         </div>
 
         <div className="characteristics-text paragraph-content-text">
-          Tout d’abord nous faisons un audit complet de votre situation et de vos besoins, puis dans un second temps restitution des préconisations, enfin nous rechercherons des solutions auprès de nos partenaires pour un accompagnement dans leurs mises en place.
+          Tout d'abord nous faisons un audit complet de votre situation et de vos besoins, puis dans un second temps restitution des préconisations, enfin nous rechercherons des solutions auprès de nos partenaires pour un accompagnement dans leurs mises en place.
         </div>
       </div>
 
@@ -66,7 +66,7 @@ export default function page() {
         </div>
 
         <div className="characteristics-text paragraph-content-text">
-          Au cabinet CAP Patrimoine, vous aurez un interlocuteur unique qui s’engagera à vous accompagner dans le temps pour des solutions optimisées et personnalisées.
+          Au cabinet CAP Patrimoine, vous aurez un interlocuteur unique qui s'engagera à vous accompagner dans le temps pour des solutions optimisées et personnalisées.
         </div>
 
       </div>

@@ -1,0 +1,51 @@
+@import './scss/base/reset', './scss/utils/variables';
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --white: #fdfdfd;
+    --light-grey: #f5f5f5;
+    --medium-grey: #d9d9d9;
+    --dark-grey: #4b4a4f;
+    --gold: #eac944;
+    --margin-side: 1.5rem;
+    --font-fam1: "Barlow", sans-serif;
+    --font-fam2: "Lora", serif;
+}
+
+body {
+    // color: var(--text);
+    // font-family: var(--fontfam2);
+    // @include sectionBg;
+    overflow-x: hidden;
+}
+
+#__next {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a,
+a:hover,
+a:visited {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .home-contactBtn {
+        text-decoration: none;
+        padding: 0.75rem 1.25rem;
+    }
+    :root {
+        font-size: 12px;
+    }
+}

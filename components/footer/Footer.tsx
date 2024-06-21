@@ -3,7 +3,8 @@ import Link from 'next/link'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-    faLinkedin
+    faLinkedin,
+    faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
@@ -41,7 +42,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="link to linkedin">
-        <FontAwesomeIcon icon={faLinkedin} />
+        <FontAwesomeIcon icon={faLinkedinIn} />
       </a>
     </div>
 

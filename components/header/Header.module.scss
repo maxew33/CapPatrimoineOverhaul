@@ -1,0 +1,152 @@
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(var(--light-grey), var(--medium-grey));
+    color: var(--dark-grey);
+    border-bottom: 5px solid var(--dark-grey);
+    z-index: 20;
+    padding-inline: 15px;
+}
+
+.burger,
+.responsiveNav {
+    display: none;
+}
+
+.navigation {
+    align-self: end;
+    --scale-value: 0;
+
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    height: 3.5vh;
+}
+
+.link {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.35rem;
+    color: unset;
+    font-family: var(--font-fam1);
+    color: var(--dark-grey);
+
+    &::after {
+        content: '';
+        width: 110%;
+        position: absolute;
+        border-radius: 2px;
+        bottom: -5px;
+        left: 50%;
+        height: 5px;
+        background: var(--gold);
+        transform: translateX(-50%) scaleX(var(--scale-value));
+        transition: transform 0.15s ease-in-out;
+    }
+
+    &:hover::after {
+        --scale-value: 1;
+    }
+}
+
+.active {
+    --scale-value: 1;
+}
+
+.social {
+    font-size: 2rem;
+    color: var(--dark-grey);
+    transition: color 0.125s linear;
+
+    &:hover {
+        color: var(--gold);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .burger {
+        display: block;
+        position: relative;
+        z-index: 2;
+        height: 2rem;
+        width: 2rem;
+        border: none;
+        cursor: pointer;
+        background: unset;
+
+        span {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            height: 3px;
+            width: 2rem;
+            background: var(--dark-grey);
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0px;
+                width: inherit;
+                height: inherit;
+                top: -10px;
+                background: var(--dark-grey);
+                border: none;
+                border-radius: 15px;
+                transition: transform 0.15s linear,
+                    background-color 0.15s linear;
+            }
+
+            &::before {
+                top: 10px;
+            }
+        }
+    }
+
+    .burgerOpen {
+        span {
+            background: transparent;
+
+            &::after {
+                transform: translateY(10px) rotate(-135deg);
+                background: var(--dark-grey);
+            }
+            &::before {
+                transform: translateY(-10px) rotate(135deg);
+                background: var(--dark-grey);
+            }
+        }
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .responsiveNav {
+        --scale-value: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        --clippy: 0%;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background: linear-gradient(var(--medium-grey), var(--light-grey));
+        clip-path: circle(var(--clippy) at calc(50% - 0.5rem) 2rem);
+        transition: clip-path 0.4s ease-in-out;
+
+        & a {
+            font-size: 3.5rem;
+        }
+    }
+
+    .openNav {
+        --clippy: 150%;
+    }
+}

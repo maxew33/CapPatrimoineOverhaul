@@ -26,13 +26,13 @@ export default function Home() {
                 </div>
 
                 <div className="presentation">
-                    <Image
+                    {/* <Image
                         className="id-pic"
                         src={'/assets/christopheVitu.webp'}
                         alt="christophe vitu"
                         width={500}
                         height={500}
-                    />
+                    /> */}
                     <div className="presentation-detail-container"></div>
                     <div className="presentation-detail-text paragraph-content-text">
                         “ Spécialiste en gestion de patrimoine, je suis présent

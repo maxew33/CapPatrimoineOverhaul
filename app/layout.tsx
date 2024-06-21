@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import './globals.css'
+import '@/styles/globals.css'
 import Header from '@/components/header/Header'
 import Footer from '@/components/footer/Footer'
 
@@ -11,18 +11,18 @@ export const metadata: Metadata = {
           rel: 'icon',
           type: 'image/png',
           sizes: '32x32',
-          url: '/public/favicon/favicon-32x32.png',
+          url: '/public/favicon-32x32.png',
         },
         {
           rel: 'icon',
           type: 'image/png',
           sizes: '16x16',
-          url: '/public/favicon/favicon-16x16.png',
+          url: '/public/favicon-16x16.png',
         },
         {
           rel: 'apple-touch-icon',
           sizes: '180x180',
-          url: '/public/favicon/apple-touch-icon.png',
+          url: '/public/apple-touch-icon.png',
         },
       ],
 }
